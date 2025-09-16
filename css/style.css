@@ -143,7 +143,7 @@ button {
 
 .hero_area {
   position: relative;
-  background-color: #f3f3f3;
+  background-color: #ffffff;
   background-image: url('..images/about.jpg');
   /* Caminho para sua imagem */
   background-size: cover;
@@ -349,81 +349,15 @@ button {
   }
 
   .navbar-brand {
-    margin-right: 180px;
+    margin-right: 200px;
     /* Ajuste conforme necessário */
   }
 
-  .custom_nav-container .navbar-toggler {
-    margin-left: 0;
-    /* Ajuste conforme necessário */
-  }
+  
 }
 
 /*end header section*/
-/* slider section */
-.slider_section {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-size: cover;
-  background-position: bottom;
-}
 
-.slider_section .row {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.slider_section #customCarousel1 {
-  width: 100%;
-  position: unset;
-}
-
-.slider_section .detail-box {
-  padding-bottom: 90px;
-}
-
-.slider_section .detail-box h1 {
-  font-weight: bold;
-  margin-bottom: 25px;
-  color: #043684;
-  text-shadow: #043684 1px 1px 1px;
-  font-size: 50px;
-}
-
-.slider_section .detail-box p {
-  color: #444;
-  font-size: 15px;
-  font-weight: bold;
-}
-
-.slider_section .detail-box a {
-  display: inline-block;
-  font-family: 'Merriweather Sans', sans-serif;
-  text-transform: uppercase;
-  padding: 10px 45px;
-  background-color: #043684;
-  border: 1px solid #043684;
-  border-radius: 5px;
-  color: #ffffff;
-  margin-top: 15px;
-}
-
-.slider_section .detail-box a:hover {
-  background-color: transparent;
-  color: #043684;
-}
-
-.slider_section .img-box img {
-  width: 100%;
-}
 
 .feature_section {
   position: relative;
