@@ -509,6 +509,62 @@
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
     <!-- End Google Map -->
+ 
+    
+
+
+<!-- Coloque antes do </body> -->
+<a id="whatsapp-wobble" href="https://wa.me/5511980592016" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp">
+  <span class="text">Atendimento</span>
+  <div class="dot"></div>
+</a>
+
+<style>
+  #whatsapp-wobble{
+    position: fixed;
+    right: 18px;
+    bottom: 110px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:10px 14px;
+    border-radius:30px;
+    background: linear-gradient(90deg,#34B7F1,#128C7E);
+    color:#fff;
+    font-weight:600;
+    text-decoration:none;
+    z-index:9999;
+    transform-origin:center;
+  }
+  #whatsapp-wobble .dot{
+    width:42px; height:42px; border-radius:50%;
+    background: #fff;
+    display:grid; place-items:center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.14);
+  }
+  #whatsapp-wobble .dot::after{
+    content: '💬';
+    font-size:20px;
+  }
+
+  @keyframes wobble {
+    0%{ transform: rotate(0) }
+    15%{ transform: rotate(-12deg) }
+    30%{ transform: rotate(8deg) }
+    45%{ transform: rotate(-6deg) }
+    60%{ transform: rotate(4deg) }
+    100%{ transform: rotate(0) }
+  }
+
+  /* aplica o wobble de tempos em tempos */
+  #whatsapp-wobble { animation: wobble 2.2s ease-in-out infinite; animation-delay: 1s; }
+
+  #whatsapp-wobble:hover{ transform: scale(1.02); box-shadow: 0 14px 40px rgba(0,0,0,0.2); }
+  @media(max-width:480px){
+    #whatsapp-wobble{ bottom:86px; right:12px; padding:8px 10px; }
+    #whatsapp-wobble .text{ display:none; }
+  }
+</style>
 
 
 </body>
